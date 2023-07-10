@@ -14,3 +14,4 @@ After creating the configuration file, run
 ```
 ./setup.sh
 ```
+This should create the necessary dependencies for the script to run. When the system is rebooted, an image should be retrieved and placed in /usr/share, which will serve as the background for the following system boot.
