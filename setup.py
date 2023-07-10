@@ -6,7 +6,7 @@ config = configparser.ConfigParser()
 config.optionxform = str
 
 apod_conf = configparser.ConfigParser()
-apod_conf.read(os.path.join('/etc','apod_conf'))
+apod_conf.read(os.path.join('/etc','apod.conf'))
 
 config['Unit'] = {
     'Description':'Astronomy Picture of the Day background update',

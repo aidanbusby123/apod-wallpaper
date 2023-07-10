@@ -50,7 +50,7 @@ def get_img(url, date):
     
 def get_apod_conf():
     config = configparser.ConfigParser()
-    config.read(os.path.join('/etc', 'apod_conf'))
+    config.read(os.path.join('/etc', 'apod.conf'))
     return config
 
 def random_date():
@@ -77,7 +77,7 @@ def wait_for_network():
             pass
 
 
-if os.path.isfile(os.path.join('/etc', 'apod_conf')):
+if os.path.isfile(os.path.join('/etc', 'apod.conf')):
     apod_conf = get_apod_conf()
     theme_dir = apod_conf['DEFAULT']['theme_directory']
     api_key = apod_conf['DEFAULT']['api_key']
